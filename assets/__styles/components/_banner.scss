@@ -1,0 +1,31 @@
+/* Banners */
+.banner__arrows {
+    background-color: $color-white;
+    border-radius: 50px;
+    color: black;
+    width: 35px;
+    height: 35px;
+    opacity: 1;
+    font-size: 1.6rem;
+    top: auto;
+    bottom: 20px;
+    left: 20px;
+    right: auto;
+
+    &:focus {
+        color: black;
+        background-color: $color-white;
+    }
+    &:hover {
+        background-color: $color-lighter-silver;
+        color: $color-shuttle-gray;
+    }
+    &:last-of-type {
+        left: 60px;
+    }
+
+    @include for-phone(lg) {
+        display: none;
+        
+    }
+}

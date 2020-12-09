@@ -1,0 +1,20 @@
+/* _Global */
+body {
+    font-family: $font-stack-1 !important;
+    font-size: $font-size-base !important;
+    color: $color-shuttle-gray !important;
+  }
+/* Titles */
+h1, h2, h3, h4, h5 {
+    color: $color-brand-1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.no-relative-mobile {
+    @include for-tablet(lg) {
+        position: static !important;
+    }
+}

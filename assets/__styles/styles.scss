@@ -1,0 +1,54 @@
+@import 'assets/chunk__styles/tools/_variables.scss';
+@import 'assets/chunk__styles/tools/_mixins.scss';
+@import 'assets/chunk__styles/tools/global.scss';
+@import 'assets/chunk__styles/components/_header.scss';
+@import 'assets/chunk__styles/components/_footer.scss';
+@import 'assets/chunk__styles/components/_banner.scss';
+@import 'assets/chunk__styles/components/_forms.scss';
+
+
+.headContent {
+    padding: 36px 0px 30px 0px;
+
+    @include for-tablet(lg) {
+        margin-top:0px;
+    }
+}
+.headContent__title {
+    font-size: 35px;
+    line-height: 1.8rem;
+    font-weight: 600;
+}
+.headContent__subtitle {
+    color: $color-silver;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.7rem;
+}
+.bodyContent {
+    margin-top:12px;
+    margin-bottom: 4.6rem;
+
+    @include for-tablet(lg) {
+        margin-top:0px;
+        position: relative;
+    }
+
+    & .container {
+        @include for-tablet(lg) {
+           width: 100%;
+           max-width: 100%;
+        }
+    }
+}
+.bodyContent__blueBar {
+    background-color: $color-brand-1;
+    height: 69px;
+    margin-top:-12px;
+    position: absolute;
+    width: 100%;
+
+    @include for-tablet(lg) {
+        display: none;
+    }
+}

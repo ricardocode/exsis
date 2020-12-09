@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Frontend Ricardo Arévalo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="assets/lib/fontawesome-5.15.1/css/all.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="assets/lib/bootstrap-5.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark topbar">
+  <div class="container">
+  <a class="navbar-brand topbar__brand" href="#"><img src="assets/images/asegurados-logo.svg" width="250" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end menu" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown menu__item menu__submenu">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Acerca de nosotros
+        </a>
+        <div class="dropdown-menu menu__submenu--wrapper" aria-labelledby="navbarDropdownMenuLink">
+          <div class="container menu__submenu--items">
+            <a class="dropdown-item float-left d-block" href="#!">Misión</a>
+            <a class="dropdown-item float-left d-block" href="#!">Visión</a>
+        </div>
+        </div>
+      </li>
+      <li class="nav-item menu__item">
+        <a class="nav-link" href="#">Descarga tu Poliza</a>
+      </li>
+      <li class="nav-item menu__item">
+        <a class="nav-link" href="assets/documents/RicardoArevalo-CV.pdf" target="_blank">Términos y condiciones</a>
+      </li>
+      
+    </ul>
+  </div>
+  </div>
+</nav>
+<section>
+  <article class="text-center headContent">
+  <h1 class="headContent__title">Cotiza tu seguro automotriz</h1>
+  <h3 class="headContent__subtitle">¡Resultados instantáneos!</h3>
+</article>
+
+
+<article class="bodyContent">
+  <div class="bodyContent__blueBar"></div>
+  <div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 pr-0 pl-xs-0 pl-sm-0 pl-md-0 align-items-stretch">
+      <div id="carouselExampleIndicators" class="carousel slide banner" data-ride="carousel" wrap="false">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/banners/banner1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/banners/banner2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/banners/banner3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev banner__arrows" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <i class="fas fa-angle-left"></i>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next banner__arrows" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <i class="fas fa-angle-right"></i>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 pl-lg-0 no-relative-mobile">
+      <form class="quoteform">
+        <div class="form-group">
+          <label for="brand">Marca del auto</label>
+          <select class="form-control quoteform__field" id="brand">
+            <option>Audi</option>
+            <option>Jaguar</option>
+            <option>Fiat Topolino</option>
+            <option>BMW</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="col pr-md-0 pr-sm-0 pr-xs-0">
+            <div class="form-group">
+              <label for="model">Modelo del auto</label>
+              <select class="form-control quoteform__field" id="model">
+                <option>Sedan</option>
+                <option>Hashback</option>
+                <option>GTI</option>
+              </select>
+            </div>
+          </div>
+          <div class="col pl-md-0 pl-sm-0 pl-xs-0">
+            <div class="form-group">
+              <label for="year">Año</label>
+              <select class="form-control quoteform__field" id="year">
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+                <option>2017</option>
+
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control quoteform__field" id="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Teléfono celular</label>
+          <input type="phone" class="form-control quoteform__field" id="phone" placeholder="Teléfono celular" required>
+        </div>
+        <div class="text-center">
+        <button type="submit" class="btn quoteform__button">Cotizar ahora</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+  
+</article>
+</section>
+<footer class="mt-5 footer">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <ul class="footer__links">
+          <li><a href="#!">Acerca de nosotros</a></li>
+          <li><a href="#!">Descarga tu poliza</a></li>
+          <li><a href="assets/documents/RicardoArevalo-CV.pdf" target="_blank">Términos y condiciones</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-md-2 col-lg-6"></div>
+      <div class="col text-center footer__social">
+        <p>
+          Síguenos en nuestras redes sociales
+        </p>
+        <div class="footer__social--icons">
+            <a href="#!" title="Facebook" class="icons--special"><i class="fab fa-facebook"></i></a>
+            <a href="#!" title="Youtube" class="icons--normal"><i class="fab fa-youtube"></i></a>
+            <a href="#!" title="Instagram" class="icons--normal"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pb-1 text-white text-center mt-2 footer__bottomBar">
+    <small>Copyright © 2020</small>
+  </div>
+</footer>
+
+<!-- js -->
+<script src="assets/lib/bootstrap-5.0.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
