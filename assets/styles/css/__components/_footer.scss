@@ -25,8 +25,11 @@
         }
     }
     & a {
-        color: $color-white;
+        color: $color-white !important;
         font-size: 0.9rem;
+        &:hover {
+            text-decoration: underline !important;
+        }
     }   
 }
 .footer__social {
@@ -75,4 +78,5 @@
 }
 .footer__bottomBar {
     background-color: black;
+    font-size: small;
 }

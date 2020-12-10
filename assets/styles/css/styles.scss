@@ -1,10 +1,10 @@
-@import 'assets/__tools/_variables.scss';
-@import 'assets/__tools/_mixins.scss';
-@import 'assets/__tools/global.scss';
-@import 'assets/__components/_header.scss';
-@import 'assets/__components/_footer.scss';
-@import 'assets/__components/_banner.scss';
-@import 'assets/__components/_forms.scss';
+@import '__tools/_variables.scss';
+@import '__tools/_mixins.scss';
+@import '__tools/global.scss';
+@import '__components/_header.scss';
+@import '__components/_footer.scss';
+@import '__components/_banner.scss';
+@import '__components/_forms.scss';
 
 
 .headContent {
@@ -16,7 +16,7 @@
 }
 .headContent__title {
     font-size: 35px;
-    line-height: 1.8rem;
+    line-height: 2.4rem;
     font-weight: 600;
 }
 .headContent__subtitle {
@@ -47,6 +47,7 @@
     margin-top:-12px;
     position: absolute;
     width: 100%;
+    z-index: -1;
 
     @include for-tablet(lg) {
         display: none;
